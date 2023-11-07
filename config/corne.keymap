@@ -32,7 +32,7 @@
 // | BTCLR|  <  |  >  |     |  .  |     |   |  0  |  1  |  2  |  3  |     | ESC  |
 //                    | GUI |     | ENT |   | SPC |     | ALT |
                         bindings = <
-   &kp TAB    &kp        &kp        &kp        &kp        &kp          &kp   &kp N7  &kp N8 &kp N9   &kp  &kp BSPC
+   &kp TAB    &kp  &kp  &kp  &kp  &kp          &kp   &kp N7  &kp N8 &kp N9   &kp  &kp BSPC
    &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp N4 &kp N5 &kp N6 &kp  &trans &trans
    &kp BT_CLR  &trans   LT    &trans   GT    &trans  &trans DOT &trans    &trans N0 &trans N1 &trans N2 &trans N3   &trans &trans ESC
                                     &kp LGUI     &trans       &kp RET      &kp SPACE  &trans   &kp RALT
@@ -47,7 +47,7 @@
 //                    | GUI |     | ENT |   | SPC |     | ALT |
                         bindings = <
    &kp  CAPS  &kp EXCL &kp AT &kp HASH &kp LPAR &kp RPAR   &kp CARET &kp C_PREV &kp C_NEXT &kp C_STOP &kp C_MUTE &kp BSPC
-   &kp LSHFT &trans MINUS &trans PLUS &trans EQUAL &trans LBKT  &trans RBKT     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSLH &kp GRAVE
+   &kp (LSHFT) &trans MINUS &trans PLUS &trans EQUAL &trans LBKT  &trans RBKT     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSLH &kp GRAVE
    &kp LCTRL &trans FLSH &trans KP_MULTIPLY &trans   &trans LBRC &trans RBRC    &kp UNDER &kp AMPS &kp DLLR &kp PRCNT &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp RET   &kp SPACE   &trans    &kp RALT
                         >;
