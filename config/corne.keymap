@@ -48,7 +48,7 @@
                         bindings = <
    &kp CAPS  &kp EXCL  &kp AT          &kp HASH  &kp LPAR &kp RPAR   &kp CARET &kp C_PREV &kp C_NEXT &kp C_STOP &kp C_MUTE &kp BSPC
    &kp LSHFT &kp MINUS &kp PLUS        &kp EQUAL &kp LBKT &kp RBKT   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp BSLH   &kp GRAVE
-   &kp LCTRL &kp FLSH  &kp KP_MULTIPLY &none     &kp LBRC &kp RBRC   &kp UNDER &kp AMPS   &kp DLLR   &kp PRCNT  &kp PIPE   &kp TILDE
+   &kp LCTRL &kp FSLH  &kp KP_MULTIPLY &none     &kp LBRC &kp RBRC   &kp UNDER &kp AMPS   &kp DLLR   &kp PRCNT  &kp PIPE   &kp TILDE
                                       &kp LGUI &trans &kp RET            &kp SPACE &trans &kp RALT
                         >;
                 };
