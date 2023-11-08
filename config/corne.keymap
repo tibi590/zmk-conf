@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-{
+/ {
         keymap {
                 compatible = "zmk,keymap";
                 
@@ -19,23 +19,23 @@
 // | CTRL |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  _  | ESC  |
 //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Z &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp Y &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp UNDER &kp ESC
-                  &kp LGUI &mo 1 &kp RET     &kp SPACE &mo 2 &kp RALT
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Z &kp U &kp I     &kp O   &kp P     &kp BSPC
+   &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI  &kp SQT
+   &kp LCTRL &kp Y &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp UNDER &kp ESC
+                  &kp LGUI &mo 1 &kp RET      &kp SPACE &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |     |     |     |   |     |  7  |  8  |  9  |     | BKSP |
+// |  TAB |     |     |     |     |  F5 |   |     |  7  |  8  |  9  |     | BKSP |
 // | SHFT | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |  4  |  5  |  6  |     |      |
 // | BTCLR|  <  |  >  |     |  .  |     |   |  0  |  1  |  2  |  3  |     | ESC  |
 //                    | GUI |     | ENT |   | SPC |     | ALT |
                         bindings = <
-   &kp TAB    &kp  &kp  &kp  &kp  &kp          &kp   &kp N7  &kp N8 &kp N9   &kp  &kp BSPC
-   &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp N4 &kp N5 &kp N6 &kp  &trans &trans
-   &kp BT_CLR  &trans   LT    &trans   GT    &trans  &trans DOT &trans    &trans N0 &trans N1 &trans N2 &trans N3   &trans &trans ESC
-                                    &kp LGUI     &trans       &kp RET      &kp SPACE  &trans   &kp RALT
+   &kp TAB    &kp           &kp          &kp          &kp          &kp F5         &kp    &kp N7 &kp N8 &kp N9 &kp &kp BSPC
+   &kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp    &kp N4 &kp N5 &kp N6 &trans &trans
+   &kp BT_CLR &kp LT        &kp GT       &trans       &kp DOT      &trans         &kp N0 &kp N1 &kp N2 &kp N3 &trans &trans ESC
+                                               &kp LGUI &trans &kp RET             &kp SPACE &trans &kp RALT
                         >;
                 };
 
@@ -46,10 +46,10 @@
 // | CTRL |  /  |  *  |     |  {  |  }  |   |  _  |  &  |  $  |  %  | "|" |  ~   |
 //                    | GUI |     | ENT |   | SPC |     | ALT |
                         bindings = <
-   &kp  CAPS  &kp EXCL &kp AT &kp HASH &kp LPAR &kp RPAR   &kp CARET &kp C_PREV &kp C_NEXT &kp C_STOP &kp C_MUTE &kp BSPC
-   &kp LSHFT &trans MINUS &trans PLUS &trans EQUAL &trans LBKT  &trans RBKT     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSLH &kp GRAVE
-   &kp LCTRL &trans FLSH &trans KP_MULTIPLY &trans   &trans LBRC &trans RBRC    &kp UNDER &kp AMPS &kp DLLR &kp PRCNT &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp RET   &kp SPACE   &trans    &kp RALT
+   &kp CAPS  &kp EXCL  &kp AT          &kp HASH  &kp LPAR &kp RPAR   &kp CARET &kp C_PREV &kp C_NEXT &kp C_STOP &kp C_MUTE &kp BSPC
+   &kp LSHFT &kp MINUS &kp PLUS        &kp EQUAL &kp LBKT &kp RBKT   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp BSLH   &kp GRAVE
+   &kp LCTRL &kp FLSH  &kp KP_MULTIPLY &trans    &kp LBRC &kp RBRC   &kp UNDER &kp AMPS   &kp DLLR   &kp PRCNT  &kp PIPE   &kp TILDE
+                                         &kp LGUI &trans &kp RET      &kp SPACE &trans &kp RALT
                         >;
                 };
         };
