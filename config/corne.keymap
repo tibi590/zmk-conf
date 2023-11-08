@@ -33,9 +33,9 @@
 //                    | GUI |     | ENT |   | SPC |     | ALT |
                         bindings = <
    &kp TAB    &kp           &kp          &kp          &kp          &kp F5         &kp    &kp N7 &kp N8 &kp N9 &kp &kp BSPC
-   &kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp    &kp N4 &kp N5 &kp N6 &trans &trans
-   &kp BT_CLR &kp LT        &kp GT       &trans       &kp DOT      &trans         &kp N0 &kp N1 &kp N2 &kp N3 &trans &trans ESC
-                                               &kp LGUI &trans &kp RET             &kp SPACE &trans &kp RALT
+   &kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp    &kp N4 &kp N5 &kp N6 &kp    &trans
+   &kp BT_CLR &kp LT        &kp GT       &kp          &kp DOT      &trans         &kp N0 &kp N1 &kp N2 &kp N3 &trans &trans ESC
+                                               &kp LGUI &kp    &kp RET             &kp SPACE &trans &kp RALT
                         >;
                 };
 
@@ -48,8 +48,8 @@
                         bindings = <
    &kp CAPS  &kp EXCL  &kp AT          &kp HASH  &kp LPAR &kp RPAR   &kp CARET &kp C_PREV &kp C_NEXT &kp C_STOP &kp C_MUTE &kp BSPC
    &kp LSHFT &kp MINUS &kp PLUS        &kp EQUAL &kp LBKT &kp RBKT   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp BSLH   &kp GRAVE
-   &kp LCTRL &kp FLSH  &kp KP_MULTIPLY &trans    &kp LBRC &kp RBRC   &kp UNDER &kp AMPS   &kp DLLR   &kp PRCNT  &kp PIPE   &kp TILDE
-                                         &kp LGUI &trans &kp RET      &kp SPACE &trans &kp RALT
+   &kp LCTRL &kp FLSH  &kp KP_MULTIPLY &kp       &kp LBRC &kp RBRC   &kp UNDER &kp AMPS   &kp DLLR   &kp PRCNT  &kp PIPE   &kp TILDE
+                                         &kp LGUI &kp    &kp RET      &kp SPACE &trans &kp RALT
                         >;
                 };
         };
