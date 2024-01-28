@@ -27,15 +27,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB | F11 | PWR |  F4 |  F5 |  F6 |   |     |  7  |  8  |  9  |     | BKSP |
+// |  TAB | F11 | PWR |  F4 |  F5 |  F6 |   | SRC |  7  |  8  |  9  |     | BKSP |
 // | SHFT | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |  4  |  5  |  6  |     | ENT  |
-// | BTCLR|  <  |  >  |  ,  |  .  |     |   |  0  |  1  |  2  |  3  |     |      |
+// | BTCLR|  <  |  >  |  ,  |  .  |  /  |   |  0  |  1  |  2  |  3  |     |      |
 //                    | GUI |     | ESC |   | SPC |     | ALT |
                         bindings = <
-   &kp TAB    &kp F11      &kp K_POWER  &kp F4       &kp F5       &kp F6         &none  &kp N7 &kp N8 &kp N9 &none   &kp BSPC
-   &kp LSHFT  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &kp N4 &kp N5 &kp N6 &none   &kp RET
-   &bt BT_CLR &kp LT       &kp GT       &kp COMMA    &kp DOT      &none          &kp N0 &kp N1 &kp N2 &kp N3 &none   &none 
-                                              &kp LGUI &trans &kp ESC                &kp SPACE &trans &kp RALT
+   &kp TAB    &kp F11      &kp K_POWER  &kp F4       &kp F5       &kp F6         &kp C_AC_SEARCH &kp N7 &kp N8 &kp N9 &none   &kp BSPC
+   &kp LSHFT  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &kp N4   &kp N5 &kp N6 &none   &kp RET
+   &bt BT_CLR &kp LT       &kp GT       &kp COMMA    &kp DOT      &kp SLASH      &kp N0 &kp N1   &kp N2 &kp N3 &none   &none 
+                                              &kp LGUI &trans &kp ESC                &kp SPACE   &trans &kp RALT
                         >;
                 };
 
